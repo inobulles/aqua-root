@@ -1,0 +1,7 @@
+store/*
+!store/lasagna-rom.zed
+
+desktop_category_entries.cge
+theme.thm
+user.uda
+widgets.wps
