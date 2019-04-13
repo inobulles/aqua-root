@@ -1,5 +1,6 @@
 store/*
 !store/lasagna-rom.zed
+aqua-ide/*
 
 desktop_category_entries.cge
 theme.thm
