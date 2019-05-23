@@ -1,8 +1,18 @@
-store/*
-!store/lasagna-rom.zed
-aqua-ide/*
+roms/*
+!roms/lasagna.zed
 
-desktop_category_entries.cge
-theme.thm
-user.uda
-widgets.wps
+user/*
+!user/objects/*
+!user/images/*
+!user/documents/*
+!user/downloads/*
+!user/music/*
+!user/videos/*
+
+config/desktop_category_entries.rmf
+config/theme.rmf
+config/user.rmf
+config/widgets.rmf
+
+perm/*
+temp/*
