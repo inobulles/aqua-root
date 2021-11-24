@@ -14,15 +14,18 @@ uniform vec2 res;
 
 void main(void) {
 	vec2 uv = interp_position + vec2(0.5);
-	float i = 2.5; // fractionnal parts of .5 work best
+	float i = 2.0;
 
 	vec3 colour = vec3(0.0);
+	float EXTENSION = 2.0;
 
-	colour += texture(sampler, uv + vec2( i,  i) / res).rgb;
-	colour += texture(sampler, uv + vec2( i, -i) / res).rgb;
-	colour += texture(sampler, uv + vec2(-i,  i) / res).rgb;
-	colour += texture(sampler, uv + vec2(-i, -i) / res).rgb;
+	for (float j = 1.0; j < EXTENSION + 1.0; j++) {
+		colour += texture(sampler, uv + (vec2( i,  i) * j + vec2( 0.5,  0.5)) / res).rgb;
+		colour += texture(sampler, uv + (vec2( i, -i) * j + vec2( 0.5, -0.5)) / res).rgb;
+		colour += texture(sampler, uv + (vec2(-i,  i) * j + vec2(-0.5,  0.5)) / res).rgb;
+		colour += texture(sampler, uv + (vec2(-i, -i) * j + vec2(-0.5, -0.5)) / res).rgb;
+	}
 
-	colour /= 4.0;
+	colour /= 4.0 * EXTENSION;
 	frag_colour = vec4(colour, alpha);
 }
