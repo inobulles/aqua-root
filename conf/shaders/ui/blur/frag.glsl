@@ -14,10 +14,10 @@ uniform vec2 res;
 
 void main(void) {
 	vec2 uv = interp_position + vec2(0.5);
-	float i = 2.0;
+	float i = 3.0;
 
 	vec3 colour = vec3(0.0);
-	float EXTENSION = 2.0;
+	float EXTENSION = 5.0;
 
 	for (float j = 1.0; j < EXTENSION + 1.0; j++) {
 		colour += texture(sampler, uv + (vec2( i,  i) * j + vec2( 0.5,  0.5)) / res).rgb;
