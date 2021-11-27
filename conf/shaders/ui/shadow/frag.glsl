@@ -21,5 +21,5 @@ void main(void) {
 	// calculate the shadow colour
 	
 	float value = 1. - clamp(length(vec2(dx, dy)), 0., 1.);
-	frag_colour = vec4(0., 0., 0., value * value) * alpha * 0.5;
+	frag_colour = vec4(0., 0., 0., value * value) * alpha * 0.1;
 }
