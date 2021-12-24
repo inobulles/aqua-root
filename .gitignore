@@ -1,5 +1,6 @@
 development.zpk
 data/*
 user/*
+apps/*
 temp
 aqua.core

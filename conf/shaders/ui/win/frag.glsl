@@ -11,5 +11,5 @@ uniform samplerExternalOES sampler;
 
 void main(void) {
 	vec4 colour = texture2D(sampler, interp_position + vec2(0.5));
-	frag_colour = vec4(colour.rgb, alpha /* * colour.a */);
+	frag_colour = vec4(colour.rgb, alpha * colour.a);
 }
