@@ -16,6 +16,8 @@ void main(void) {
 	vec2 uv = interp_position + vec2(0.5);
 	float i = 3.0;
 
+	uv.y = 1.0 - uv.y;
+
 	vec3 colour = vec3(0.0);
 	float EXTENSION = 5.0;
 
