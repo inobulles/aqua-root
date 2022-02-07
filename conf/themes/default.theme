@@ -1,36 +1,4 @@
-# the default theme is a light theme, with dark text on a light background
+# this is the theme loaded by the UI device by default
+# it inherits from the light theme, but this can be changed by the user
 
-# standard colours
-# these come from the Apple HIG: https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/color/
-# the grey colour is "Gray (3)"
-
-white          #FFFFFF
-grey           #C7C7CC
-black          #000000
-
-red            #FF3B30
-orange         #FF9500
-yellow         #FFCC00
-green          #34C759
-mint           #00C7BE
-cyan           #32ADE6
-blue           #007AFF
-indigo         #5856D6
-purple         #AF52DE
-pink           #FF2D55
-brown          #A2845E
-
-# UI colours
-
-base           #FFFFFFB2
-text           black
-inverted_text  white
-selection      indigo
-bg             #E5E5F2
-interaction_bg #B7B7C1
-shadow         #00000030
-
-# other UI values
-
-corner_radius  12
-shadow_radius  64
+inherit light

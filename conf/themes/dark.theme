@@ -1,7 +1,7 @@
 # dark theme, with light text on a dark background
-# inherits from the default light theme
+# inherits from the light theme
 
-inherit default
+inherit light
 
 # standard colours
 # these come from the Apple HIG: https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/color/
