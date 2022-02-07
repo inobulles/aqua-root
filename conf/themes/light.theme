@@ -24,12 +24,20 @@ brown          #A2845E
 # UI colours
 
 base           #FFFFFFB2
-text           black
-inverted_text  white
-selection      indigo
+fg             black
 bg             #E5E5F2
-interaction_bg #B7B7C1
 shadow         #00000030
+
+selected_fg    white
+clickable_fg   text
+
+selected_bg    indigo
+hovered_bg     yellow
+clickable_bg   orange
+pressed_bg     selected_bg
+
+selected_pressed_bg purple
+selected_hovered_bg green
 
 # other UI values
 
