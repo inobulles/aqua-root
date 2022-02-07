@@ -1,11 +1,11 @@
-# the default theme is a light theme
+# the default theme is a light theme, with dark text on a light background
 
 # standard colours
 # these come from the Apple HIG: https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/color/
 # the grey colour is "Gray (3)"
 
 white          #FFFFFF
-gray           #48484A
+grey           #C7C7CC
 black          #000000
 
 red            #FF3B30
