@@ -24,13 +24,13 @@ brown          #A2845E
 # UI colours
 
 base           #FFFFFFB2
-fg             black
-bg             #E5E5F2
 shadow         #00000030
 
+fg             black
 selected_fg    white
-clickable_fg   text
+clickable_fg   fg
 
+bg             #E5E5F2
 selected_bg    indigo
 hovered_bg     yellow
 clickable_bg   orange
