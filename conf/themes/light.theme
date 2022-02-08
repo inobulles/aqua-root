@@ -23,7 +23,7 @@ brown          #A2845E
 
 # UI colours
 
-base           #FFFFFFB2
+base           #000000B2
 shadow         #00000030
 
 fg             black

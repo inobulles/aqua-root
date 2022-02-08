@@ -31,12 +31,12 @@ selected_fg    black
 clickable_fg   fg
 
 bg             #19191F
-selected_bg    cyan
-hovered_bg     mint
+selected_bg    indigo
+hovered_bg     #33333F
 clickable_bg   #19191F
-pressed_bg     #33333F
+pressed_bg     pink
 
-selected_pressed_bg purple
-selected_hovered_bg indigo
+selected_pressed_bg pink
+selected_hovered_bg purple
 
 # other UI values are completely inherited from the default theme
