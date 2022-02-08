@@ -24,7 +24,7 @@ brown          #A2845E
 
 # UI colours
 
-base           #000000B2
+base           #FFFFFFD0
 shadow         #00000030
 
 fg             black
@@ -32,13 +32,13 @@ selected_fg    white
 clickable_fg   fg
 
 bg             #E5E5F2
-selected_bg    indigo
-hovered_bg     yellow
-clickable_bg   orange
-pressed_bg     selected_bg
+selected_bg    red
+hovered_bg     #C5C5D2
+clickable_bg   bg
+pressed_bg     yellow
 
-selected_pressed_bg purple
-selected_hovered_bg green
+selected_pressed_bg pressed_bg
+selected_hovered_bg orange
 
 # other UI values
 

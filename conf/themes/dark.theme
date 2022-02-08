@@ -23,20 +23,20 @@ brown          #AC8E68
 
 # UI colours
 
-base           #000C
+base           #000D
 shadow         #000A
 
 fg             white
-selected_fg    black
+selected_fg    fg
 clickable_fg   fg
 
 bg             #19191F
 selected_bg    indigo
 hovered_bg     #33333F
-clickable_bg   #19191F
+clickable_bg   bg
 pressed_bg     pink
 
-selected_pressed_bg pink
+selected_pressed_bg pressed_bg
 selected_hovered_bg purple
 
 # other UI values are completely inherited from the default theme
