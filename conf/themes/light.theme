@@ -5,6 +5,7 @@
 # these come from the Apple HIG: https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/color/
 # the grey colour is "Gray (3)"
 
+transparent    #0000
 white          #FFFFFF
 grey           #C7C7CC
 black          #000000
