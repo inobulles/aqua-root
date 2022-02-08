@@ -17,6 +17,9 @@ void main(void) {
 	float dx = vector.x / radius.x;
 	float dy = vector.y / radius.y;
 
-	float value = 1. - clamp(length(vec2(dx, dy)), 0., 1.);
-	frag_colour = /*vec4(0.7, 0.8, 1.0, 0.3)*/ colour * vec4(vec3(1.), value * value * alpha);
+	float x = length(vec2(dx, dy));// * 5.0;
+	//x = -x * x + 2.0 * x;// - 11.5;
+
+	float value = 1. - clamp(x, 0., 1.);
+	frag_colour = vec4(0.7, 0.8, 1.0, 0.3) * vec4(vec3(1.), value * value * alpha);
 }
