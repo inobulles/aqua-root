@@ -36,6 +36,7 @@ selected_bg    red
 hovered_bg     #C5C5D2
 clickable_bg   bg
 pressed_bg     yellow
+translucent_bg #FFFFFFAE
 
 selected_pressed_bg pressed_bg
 selected_hovered_bg orange

@@ -35,6 +35,7 @@ selected_bg    indigo
 hovered_bg     #33333F
 clickable_bg   bg
 pressed_bg     pink
+translucent_bg #19191950
 
 selected_pressed_bg pressed_bg
 selected_hovered_bg purple
