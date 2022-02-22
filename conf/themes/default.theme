@@ -1,0 +1,4 @@
+# this is the theme loaded by the UI device by default
+# it inherits from the light theme, but this can be changed by the user
+
+inherit light

@@ -1,0 +1,48 @@
+# light theme, with dark text on a light background
+# this theme inherits from nothing, as it mostly serves as a base for other themes
+
+# standard colours
+# these come from the Apple HIG: https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/color/
+# the grey colour is "Gray (3)"
+
+transparent    #0000
+white          #FFFFFF
+grey           #C7C7CC
+black          #000000
+
+red            #FF3B30
+orange         #FF9500
+yellow         #FFCC00
+green          #34C759
+mint           #00C7BE
+cyan           #32ADE6
+blue           #007AFF
+indigo         #5856D6
+purple         #AF52DE
+pink           #FF2D55
+brown          #A2845E
+
+# UI colours
+
+base           #FFFFFFD0
+shadow         #00000030
+
+fg             black
+selected_fg    white
+clickable_fg   fg
+
+bg             #E5E5F2
+selected_bg    red
+hovered_bg     #C5C5D2
+clickable_bg   bg
+pressed_bg     yellow
+translucent_bg #FFFFFFAE
+
+selected_pressed_bg pressed_bg
+selected_hovered_bg orange
+
+# other UI values
+
+hover_shift    4
+corner_radius  12
+shadow_radius  64
