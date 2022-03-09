@@ -8,6 +8,7 @@ out vec4 frag_colour;
 uniform float alpha;
 uniform vec2 scale;
 uniform vec2 spread;
+uniform vec4 colour;
 
 void main(void) {
 	// find distance from point on shadow plane to object bounds
@@ -19,7 +20,8 @@ void main(void) {
 	dy = clamp(dy, 0., 1.);
 	
 	// calculate the shadow colour
+	// we use a quadratic falloff for things to look nice and pretty
 	
 	float value = 1. - clamp(length(vec2(dx, dy)), 0., 1.);
-	frag_colour = vec4(0., 0., 0., value * value) * alpha * 0.1;
+	frag_colour = vec4(colour.rgb, colour.a * value * value);
 }
