@@ -24,7 +24,7 @@ brown          #AC8E68
 # UI colours
 
 base           #000D
-shadow         #000A
+shadow         #0008
 
 fg             white
 selected_fg    fg
@@ -35,13 +35,14 @@ selected_bg    indigo
 hovered_bg     #33333F
 clickable_bg   bg
 pressed_bg     pink
-translucent_bg #191919A0
+translucent_bg #191919D0
+#translucent_bg #0000
 
 selected_pressed_bg pressed_bg
 selected_hovered_bg purple
 
 # other UI values
 
-shadow_radius  96
+shadow_radius  64
 
 # other UI values are completely inherited from the default theme
