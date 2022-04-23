@@ -34,7 +34,7 @@ void main(void) {
 	uv.y = 1.0 - uv.y;
 
 	vec3 colour = vec3(0.0);
-	float EXTENSION = 5.0;
+	float EXTENSION = 10.0;
 
 	for (float j = 1.0; j < EXTENSION + 1.0; j++) {
 		kawase_sample(uv + (vec2( i,  i) * j + vec2( 0.5,  0.5)) / res, colour);
