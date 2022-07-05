@@ -23,5 +23,5 @@ void main(void) {
 	// we use a quadratic falloff for things to look nice and pretty
 	
 	float value = 1. - clamp(length(vec2(dx, dy)), 0., 1.);
-	frag_colour = vec4(colour.rgb, colour.a * value * value);
+	frag_colour = vec4(colour.rgb, alpha * colour.a * value * value);
 }

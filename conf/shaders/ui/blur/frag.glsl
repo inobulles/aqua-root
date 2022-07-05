@@ -13,15 +13,17 @@ uniform vec2 res;
 // implementation of the simple Kawase blur
 // you can disable/enable an approximation of gamma correction (where gamma = 2 instead of 2.2) by commenting/uncommenting this line
 
-#define GAMMA_CORRECTION
+#define GAMMA 2.0
 
 void kawase_sample(in vec2 coords, inout vec3 colour) {
 	vec3 sample_ = texture(sampler, coords).rgb;
 
 	// we can't use an asignment operator here for reasons I'm unsure about, at least on NVIDIA
 
-#if defined(GAMMA_CORRECTION)
-	colour = colour + sample_ * sample_;
+#if defined(GAMMA)
+	colour.r = colour.r + pow(sample_.r, GAMMA);
+	colour.g = colour.g + pow(sample_.g, GAMMA);
+	colour.b = colour.b + pow(sample_.b, GAMMA);
 #else
 	colour = colour + sample_;
 #endif
@@ -45,8 +47,10 @@ void main(void) {
 
 	colour /= 4.0 * EXTENSION;
 
-#if defined(GAMMA_CORRECTION)
-	colour = sqrt(colour); // gamma
+#if defined(GAMMA)
+	colour.r = pow(colour.r, 1.0 / GAMMA);
+	colour.g = pow(colour.g, 1.0 / GAMMA);
+	colour.b = pow(colour.b, 1.0 / GAMMA);
 #endif
 
 	frag_colour = vec4(colour, alpha);
