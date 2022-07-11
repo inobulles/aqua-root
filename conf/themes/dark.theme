@@ -24,7 +24,7 @@ brown          #AC8E68
 # UI colours
 
 base           #000D
-shadow         #000A
+shadow         #0008
 
 fg             white
 selected_fg    fg
@@ -35,7 +35,7 @@ selected_bg    indigo
 hovered_bg     #33333F
 clickable_bg   bg
 pressed_bg     pink
-translucent_bg #19191950
+translucent_bg #191919C0
 
 selected_pressed_bg pressed_bg
 selected_hovered_bg purple

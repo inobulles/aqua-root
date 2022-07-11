@@ -10,8 +10,7 @@ uniform sampler2D sampler;
 
 void main(void) {
 	vec4 colour = texture(sampler, interp_position + vec2(0.5));
-
-	// don't undo alpha premultiplication
+	colour.rgb /= colour.a; // undo alpha premultiplication
 
 	frag_colour = vec4(colour.bgr, alpha * colour.a);
 }

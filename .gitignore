@@ -1,5 +1,9 @@
 development.zpk
 data/*
 user/*
+apps/*
 temp
-aqua.core
+*.core
+hires-map.png
+map.png
+conf/wp/outrun

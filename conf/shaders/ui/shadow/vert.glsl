@@ -3,13 +3,14 @@
 precision highp float;
 
 layout(location = 0) in vec2 vert_position;
-out vec2 interp_position;
+out vec2 map_position;
 
 uniform float depth;
 uniform vec2 position;
 uniform vec2 scale;
+uniform vec2 spread;
 
 void main(void) {
-	interp_position = vert_position;
-	gl_Position = vec4(vert_position * scale * vec2(1., -1.) + position, depth, 1.0);
+	map_position = vert_position * (scale + spread);
+	gl_Position = vec4(map_position + position, depth, 1.0);
 }

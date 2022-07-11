@@ -10,6 +10,6 @@ uniform vec2 position;
 uniform vec2 scale;
 
 void main(void) {
-	interp_position = vert_position;
-	gl_Position = vec4(vert_position * scale * vec2(1., -1.) + position, depth, 1.0);
+	interp_position = vert_position * scale + position;
+	gl_Position = vec4(interp_position, depth, 1.0);
 }
