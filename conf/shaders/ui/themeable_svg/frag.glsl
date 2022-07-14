@@ -19,5 +19,5 @@ void main(void) {
 	float bg = colour.g;
 
 	vec4 themed_colour = theme_fg * fg + theme_bg * bg;
-	frag_colour = vec4(themed_colour.bgr, alpha * themed_colour.a * colour.a);
+	frag_colour = vec4(themed_colour.bgr, alpha * colour.a);
 }
