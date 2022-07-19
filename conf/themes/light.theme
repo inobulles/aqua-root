@@ -28,6 +28,7 @@ base           #FFFFFFD0
 shadow         #00000020
 
 fg             black
+placeholder_fg grey
 selected_fg    white
 clickable_fg   fg
 
