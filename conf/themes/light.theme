@@ -25,7 +25,7 @@ brown          #A2845E
 # UI colours
 
 base           #FFFFFFD0
-shadow         #00000020
+shadow         #0000000D
 
 fg             black
 placeholder_fg grey
@@ -34,7 +34,7 @@ clickable_fg   fg
 
 bg             #FFF
 selected_bg    red
-hovered_bg     #C5C5D2
+hovered_bg     #E5E5F2
 clickable_bg   bg
 pressed_bg     yellow
 translucent_bg #FFFFFFAE
@@ -47,4 +47,4 @@ selected_hovered_bg orange
 hover_shift    4
 
 corner_radius  12
-shadow_radius  64
+shadow_radius  32
