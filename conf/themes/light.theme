@@ -42,6 +42,9 @@ translucent_bg #FFFFFFAE
 selected_pressed_bg pressed_bg
 selected_hovered_bg orange
 
+cursor_fg      bg
+cursor_bg      fg
+
 # other UI values
 
 hover_shift    4

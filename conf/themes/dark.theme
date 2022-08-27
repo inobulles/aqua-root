@@ -41,6 +41,9 @@ translucent_bg #292929A0
 selected_pressed_bg pressed_bg
 selected_hovered_bg purple
 
+cursor_fg      bg
+cursor_bg      fg
+
 # other UI values
 
 shadow_radius 96
