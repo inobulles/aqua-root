@@ -44,6 +44,7 @@ selected_hovered_bg orange
 
 cursor_fg      bg
 cursor_bg      fg
+cursor_corner_radius 2
 
 # other UI values
 
