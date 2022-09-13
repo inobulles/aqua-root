@@ -52,3 +52,11 @@ hover_shift    4
 
 corner_radius  12
 shadow_radius  32
+
+# keyboard stuff
+
+caret_repeat_timeout_0 0.3
+caret_repeat_timeout_1 0.03
+caret_repeat_timeout_2 0.005
+
+caret_accel_barrier 10
