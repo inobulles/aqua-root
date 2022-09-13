@@ -41,12 +41,14 @@ translucent_bg #292929A0
 selected_pressed_bg pressed_bg
 selected_hovered_bg purple
 
-cursor_fg      bg
-cursor_bg      fg
-cursor_corner_radius 2
-
 # other UI values
 
 shadow_radius 96
+
+# keyboard stuff
+
+caret_fg       bg
+caret_bg       fg
+caret_corner_radius 2
 
 # other UI values are inherited from the default theme

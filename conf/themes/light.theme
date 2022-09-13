@@ -42,10 +42,6 @@ translucent_bg #FFFFFFAE
 selected_pressed_bg pressed_bg
 selected_hovered_bg orange
 
-cursor_fg      bg
-cursor_bg      fg
-cursor_corner_radius 2
-
 # other UI values
 
 hover_shift    4
@@ -54,6 +50,10 @@ corner_radius  12
 shadow_radius  32
 
 # keyboard stuff
+
+caret_fg       bg
+caret_bg       fg
+caret_corner_radius 2
 
 caret_repeat_timeout_0 0.3
 caret_repeat_timeout_1 0.03
